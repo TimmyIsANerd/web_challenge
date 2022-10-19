@@ -1,0 +1,132 @@
+:root {
+    --dark: #161416;
+    --gray: #212024;
+}
+
+body,
+html {
+    min-height: 100%;
+    background-color: var(--gray);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    color: #fff;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+section .section-title {
+    font-weight: 600;
+}
+
+section.about-us {
+    background-color: var(--dark);
+    padding: 20px;
+}
+
+.about-us .about-us-article {
+    padding: 10px;
+    position: relative;
+}
+
+.about-us .about-us-article .about-us-img {
+    max-width: 416px;
+    max-height: 501px;
+    overflow: hidden;
+}
+
+.about-us .about-us-article .about-us-img img {
+    width:  100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.about-us .about-us-article .about-us-img img:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.about-us .about-us-article .about-us-body {
+    padding-left: 3em;
+    padding-top: 1em;
+}
+
+.about-us .about-us-article .join-us-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 16px;
+    width: fit-content;
+    background: #DF9B59;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .about-us .about-us-article .about-us-img {
+        max-width: 400px;
+        max-height: 200px;
+        overflow: hidden;
+    }
+
+    .about-us .about-us-article .about-us-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .about-us .about-us-article .about-us-body{
+        padding-left: 1em;
+        padding-top: 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .about-us .about-us-article .about-us-img {
+        max-width: 400px;
+        max-height: 350px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about-us .about-us-article .about-us-img {
+        max-width: 100%;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .about-us .about-us-article .about-us-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .about-us .about-us-article .about-us-body{
+        padding-left: 1em;
+        padding-top: 0px;
+        margin-top: 2em;
+    }
+}
